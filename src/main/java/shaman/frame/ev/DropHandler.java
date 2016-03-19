@@ -42,7 +42,6 @@ public class DropHandler extends TransferHandler {
 			List<File> files = (List<File>) t
 					.getTransferData(DataFlavor.javaFileListFlavor);
 
-			StringBuffer fileList = new StringBuffer();
 			for (File file : files) {
 				frame.add(file);
 			}
