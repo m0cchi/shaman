@@ -3,7 +3,10 @@ package shaman;
 import java.io.IOException;
 import java.util.zip.ZipException;
 
+import javax.swing.JFrame;
+
 import shaman.exception.UnSupportedExtensionException;
+import shaman.frame.MainFrame;
 import shaman.pdf.Converter;
 
 import com.itextpdf.text.DocumentException;
@@ -15,7 +18,7 @@ public class Boot {
 		boolean direction = true;
 		switch (args.length) {
 		case 0:
-			
+			new MainFrame().setVisible(true);
 			break;
 		case 2:
 			direction = Boolean.getBoolean(args[1]);
