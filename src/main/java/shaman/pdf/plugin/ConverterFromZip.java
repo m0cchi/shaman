@@ -61,6 +61,7 @@ public class ConverterFromZip extends Converter {
 			}
 			pdfMaker.addImage(output.toByteArray());
 			output.close();
+			bis.close();
 		}
 		archive.close();
 		pdfMaker.close();
