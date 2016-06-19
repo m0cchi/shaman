@@ -16,7 +16,7 @@ public class Util {
 		if (point != -1) {
 			return path.substring(point + 1);
 		}
-		return null;
+		return "";
 	}
 
 	public static String getFileName(String path) {
